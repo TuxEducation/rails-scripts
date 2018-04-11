@@ -1,11 +1,13 @@
 #!/bin/bash
 # Refrence : http://railsapps.github.io/installrubyonrails-mac.html
+set -e
 source ~/.rvm/scripts/rvm
 rvm gemset use rails5.2     # create a gemset before running this script or you can use global gemset
 echo -e "Project Name : \c"
 read pname
 pname="${pname// /_}"   # here it'll replace spaces with underscores
-pname="${pname,,}"      # require bash 4 to convert to lowercase
+# pname="${pname,,}"      # require bash 4 to convert to lowercase
+pname=$(echo $pname | tr '[:upper:]' '[:lower:]')
 mkdir $pname
 echo "Successfully created $pname/"
 cd $pname
