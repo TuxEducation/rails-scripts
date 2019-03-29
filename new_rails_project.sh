@@ -11,9 +11,10 @@ pname=$(echo $pname | tr '[:upper:]' '[:lower:]')
 mkdir $pname
 echo "Successfully created $pname/"
 cd $pname
-rvm use ruby-2.5.0@$pname --ruby-version --create
-echo "Successfully created $pname gemset with ruby version 2.5.0"
+rvm use ruby-2.6.0@$pname --ruby-version --create
+echo "Successfully created $pname gemset with ruby version 2.6.0"
 gem install rails
 echo "Successfully installed rails"
 rails new . --database=postgresql       # default DB is selected to postgresql
 echo "Successfully created $pname project."
+

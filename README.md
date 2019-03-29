@@ -9,7 +9,7 @@ This script creates a new rails project and a gemset for the same project.
 
 Before executing this script your system needs to have RVM installed.
 
-This script is using rails5.2 *(name of gemset)* gemset which you've to create with Ruby 2.5.0 and Rails 5.2 installed in it. Or you can create your own gemset and you can also install any appropriate version of Ruby and Rails and modify the script accordingly. If you want you can also use global gemset as well.
+This script is using rails5.2 *(name of gemset)* gemset which you've to create with Ruby 2.6.0 and Rails 5.2 installed in it. Or you can create your own gemset and you can also install any appropriate version of Ruby and Rails and modify the script accordingly. If you want you can also use global gemset as well.
 
 Note : bash version 4 is needed to run this script and this script is tested on OSX only.
 
@@ -35,7 +35,7 @@ This script delete your rails project as well as it's gemset also. It'll delete 
 [RailsApps Project](http://railsapps.github.io/installrubyonrails-mac.html)
 
 ## Contributing 
-1. Fork it ( https://github.com/vishalnagda1/rails_scripts/fork )
+1. Fork it ( https://github.com/TuxEducation/rails-scripts/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
